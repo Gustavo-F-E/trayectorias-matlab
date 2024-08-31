@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trayectorias de bobinado</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Trayectorias de bobinado</h1>
+  <form id="bobinadoForm">
+    <label for="anchoFibra">Ancho de la fibra:</label>
+    <input type="number" id="anchoFibra" required>
+    <label for="anguloBobinado">Ángulo de bobinado:</label>
+    <input type="number" id="anguloBobinado" required>
+    <label for="diametroMandril">Diámetro del mandril:</label>
+    <input type="number" id="diametroMandril" required>
+    <label for="diametroMandril">longitud_a_bobinar:</label>
+    <input type="number" id="longitud_a_bobinar" required>
+    <button type="button" id="calcularBtn">Calcular y Graficar</button>
+  </form>
+  <div id="graficos">
+    <div id="mandrilGrafico"></div>
+    <div id="trayectoriaGrafico"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+  </body>
+</html>
